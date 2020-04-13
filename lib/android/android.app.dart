@@ -1,14 +1,16 @@
+import 'package:contacts/android/styles.dart';
 import 'package:flutter/material.dart';
 
 class AndroidApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Contacts',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: androidTheme(),
+      home: Scaffold(
+        body: Text("OK"),
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
